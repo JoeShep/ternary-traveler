@@ -2,7 +2,18 @@
 const url = "http://localhost:8088"
 function getPOIs() {
   return fetch(`${url}/interests?_expand=place`)
-  .then( interestData => interestData.json())
+  .then( poiData => poiData.json())
+}
+
+function addPOI(poi) {
+  return fetch(`${url}/interests`, {
+    method: "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(poi)
+  })
+  .then( poiData => poiData.json())
 }
 
 function updatePOI(poi) {
@@ -18,6 +29,11 @@ function updatePOI(poi) {
 function getPOI(id) {
   return fetch(`${url}/interests/${id}`)
   .then( interest => interest.json())
+}
+
+function getPlaces() {
+  return fetch(`${url}/places`)
+  .then( interestData => interestData.json())
 }
 
 // component
@@ -99,4 +115,4 @@ function displayPOIs() {
 }
 
 
-export {displayPOIs}
+export {displayPOIs, addPOI, getPlaces}

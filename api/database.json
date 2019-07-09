@@ -32,6 +32,20 @@
       "description": "Subject yourself to disdain and outright hostility from the wait staff when you struggle to order some coffee in French",
       "cost": "100.00",
       "review": "Ordered \"french roast\", got served a whole roasted pig. Oops"
+    },
+    {
+      "name": "airport",
+      "description": "planes and stuff",
+      "cost": "34.00",
+      "placeId": 2,
+      "id": 3
+    },
+    {
+      "name": "monkey petting zoo",
+      "description": "bring bananas",
+      "cost": "34.00",
+      "placeId": 1,
+      "id": 4
     }
   ]
 }
