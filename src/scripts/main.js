@@ -1,1 +1,5 @@
-console.log("Your Webpack application is set up and ready to go. Please start writing code.")
+import { displayPOIs } from "./pois.js"
+
+const container = document.querySelector("#container")
+
+displayPOIs()

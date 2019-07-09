@@ -1,24 +1,37 @@
 {
-  "posts": [
+  "places": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Italy",
+      "visa_required": false
     },
     {
       "id": 2,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
     }
   ],
-  "comments": [
+  "interests": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "placeId": 1,
+      "name": "Local Market",
+      "description": "Local market where you can purchase local products and try the local food",
+      "cost": "60.50",
+      "review": "Take your Pepto Bismol before you go."
+    },
+    {
+      "id": 2,
+      "placeId": 3,
+      "name": "Snooty Cafe",
+      "description": "Subject yourself to disdain and outright hostility from the wait staff when you struggle to order some coffee in French",
+      "cost": "100.00",
+      "review": "Ordered \"french roast\", got served a whole roasted pig. Oops"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
