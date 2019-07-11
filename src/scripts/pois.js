@@ -51,6 +51,7 @@ function makePOIComponent(poi) {
           Review: <textarea name="review" id=review-edit-${poi.id}>${poi.review}</textarea>
         </p>
         <button id=editPOI-${poi.id}>edit</button>
+        <button id=deletePOI-${poi.id}>delete</button>
         <button class="is-hidden" id=save-editPOI-${poi.id}>save</button>
       </div>
     `

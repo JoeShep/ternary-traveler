@@ -45,7 +45,8 @@
       "description": "bring bananas",
       "cost": "34.00",
       "placeId": 1,
-      "id": 4
+      "id": 4,
+      "review": "smelled weird"
     }
   ]
 }
